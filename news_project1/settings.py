@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 
 import django.contrib.staticfiles.finders
-from django.conf.global_settings import MEDIA_URL, STATICFILES_DIRS
+from django.conf.global_settings import MEDIA_URL, STATICFILES_DIRS, LOGIN_REDIRECT_URL, EMAIL_BACKEND, LOCALE_PATHS
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -42,13 +42,19 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #app
+    'ckeditor',
+    'ckeditor_uploader',
     'news_feed',
+    'accounts',
+    'hitcount',
+    'modeltranslation',
 
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    "django.middleware.locale.LocaleMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -111,13 +117,30 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'uz'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
-
+USE_L10N = True
 USE_TZ = True
+
+from django.utils.translation import gettext_lazy as _
+LANGUAGES = [
+    ('uz', _('Uzbek')),
+    ('en', _('English')),
+    ('ru', _('Russian')),
+]
+
+# MODELTRANSLATION_DEFAULT_LANGUAGE = 'uz'
+
+# faqat bir tilni o'ziga oid yangiliklarni chiqarish uchun
+
+MODELTRANSLATION_FALLBACK_LANGUAGES = {
+    'default': (),
+}
+
+LOCALE_PATHS = (BASE_DIR / 'locale', )
 
 
 # Static files (CSS, JavaScript, Images)
@@ -130,6 +153,26 @@ STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder'
 ]
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+
+
+
+
+#ckeditor configs
+
+CKEDITOR_CONFIGS = {
+    'default':{
+        'toolbar':'Full',
+        'height': 300,
+        'width': '100%',
+        'entities': False,
+        'basicEntities': False,
+    }
+}
+
+
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+CKEDITOR_RESTRICT_BY_USER = True
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
@@ -139,3 +182,8 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+LOGIN_REDIRECT_URL= "home_page"
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+LOGIN_URL = "login"
