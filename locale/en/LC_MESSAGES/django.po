@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-28 10:39+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\news_project1\settings.py:128
+msgid "Uzbek"
+msgstr "Uzbek"
+
+#: .\news_project1\settings.py:129
+msgid "English"
+msgstr "English"
+
+#: .\news_project1\settings.py:130
+msgid "Russian"
+msgstr "Russian"
+
+#: .\templates\news\base.html:38
+msgid " Admin sahifasi "
+msgstr "Admin page"
+
+#: .\templates\news\base.html:60
+msgid "Mening profilim"
+msgstr "My profile"
+
+#: .\templates\news\base.html:61
+msgid "Chiqish"
+msgstr "Log out"
+
+#: .\templates\news\base.html:64
+msgid "Saytga kirish"
+msgstr "Login"
+
+#: .\templates\news\base.html:87 .\templates\news\home.html:121
+msgid "Texnologiya"
+msgstr "Technology"
+
+#: .\templates\news\base.html:97
+msgid "Maxalliy"
+msgstr "Locale"
+
+#: .\templates\news\base.html:98 .\templates\news\home.html:89
+msgid "Xorij"
+msgstr "World"
+
+#: .\templates\news\base.html:99 .\templates\news\home.html:187
+msgid "Sport"
+msgstr "Sport"
+
+#: .\templates\news\base.html:100
+msgid "Contact Us"
+msgstr "Contact Us"
+
+#: .\templates\news\base.html:105
+msgid "Qidirish"
+msgstr "Search"
+
+#: .\templates\news\home.html:27
+msgid "So'ngi yangiliklar"
+msgstr "Latest news"
+
+#: .\templates\news\home.html:54
+msgid " Mahalliy yangiliklar "
+msgstr "Locale News"
+
+#: .\templates\news\home.html:63
+msgid " Ko'rilganlar soni:"
+msgstr "Viewership"
+
+#: .\templates\news\home.html:77 .\templates\news\home.html:97
+#: .\templates\news\home.html:111 .\templates\news\home.html:129
+#: .\templates\news\home.html:141 .\templates\news\home.html:196
+#: .\templates\news\home.html:210
+msgid "Ko'rilganlar soni:"
+msgstr "Viewership"
+
+#: .\templates\news\home.html:224
+msgid "Ommabop"
+msgstr "Popular"
+
+#: .\templates\news\home.html:298
+msgid "Barcha kategoriyalar"
+msgstr "All categories"
+
+#: .\templates\news\home.html:300
+msgid "Kategoriyani tanlang"
+msgstr "Choose a Category"
+
+#: .\templates\news\home.html:307
+msgid "Linklar"
+msgstr "Links"
+
+#: .\templates\news\search_results.html:7
+msgid "Qidiruv natijalari"
+msgstr "Search results"

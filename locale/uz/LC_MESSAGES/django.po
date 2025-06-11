@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-29 05:36+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: .\news_feed\models.py:33 .\news_project1\settings.py:128
+msgid "Uzbek"
+msgstr "Uzbek"
+
+#: .\news_feed\models.py:34 .\news_project1\settings.py:130
+msgid "Russian"
+msgstr "Russian"
+
+#: .\news_feed\models.py:35 .\news_project1\settings.py:129
+msgid "English"
+msgstr "English"
+
+#: .\templates\news\base.html:38
+msgid " Admin sahifasi "
+msgstr "Admin sahifasi"
+
+#: .\templates\news\base.html:51
+msgid "Change language"
+msgstr "Change language"
+
+#: .\templates\news\base.html:59
+msgid "Mening profilim"
+msgstr "Mening profilim"
+
+#: .\templates\news\base.html:60
+msgid "Chiqish"
+msgstr "Chiqish"
+
+#: .\templates\news\base.html:63
+msgid "Saytga kirish"
+msgstr "Saytga kirish"
+
+#: .\templates\news\base.html:86 .\templates\news\home.html:120
+msgid "Texnologiya"
+msgstr "Texnologiya"
+
+#: .\templates\news\base.html:96
+msgid "Maxalliy"
+msgstr "Maxalliy"
+
+#: .\templates\news\base.html:97 .\templates\news\home.html:88
+msgid "Xorij"
+msgstr "Xorij"
+
+#: .\templates\news\base.html:98 .\templates\news\home.html:186
+msgid "Sport"
+msgstr "Sport"
+
+#: .\templates\news\base.html:99
+msgid "Contact Us"
+msgstr "Contact Us"
+
+#: .\templates\news\base.html:104
+msgid "Qidirish"
+msgstr "Qidirish"
+
+#: .\templates\news\home.html:26
+msgid "So'ngi yangiliklar"
+msgstr "So'ngi yangiliklar"
+
+#: .\templates\news\home.html:53
+msgid " Mahalliy yangiliklar "
+msgstr "Mahalliy yangiliklar"
+
+#: .\templates\news\home.html:62
+msgid " Ko'rilganlar soni:"
+msgstr "Ko'rilganlar soni:"
+
+#: .\templates\news\home.html:76 .\templates\news\home.html:96
+#: .\templates\news\home.html:110 .\templates\news\home.html:128
+#: .\templates\news\home.html:140 .\templates\news\home.html:195
+#: .\templates\news\home.html:209
+msgid "Ko'rilganlar soni:"
+msgstr "Ko'rilganlar soni:"
+
+#: .\templates\news\home.html:223
+msgid "Ommabop"
+msgstr "Ommabop"
+
+#: .\templates\news\home.html:297
+msgid "Barcha kategoriyalar"
+msgstr "Barcha kategoriyalar"
+
+#: .\templates\news\home.html:299
+msgid "Kategoriyani tanlang"
+msgstr "Kategoriyani tanlang"
+
+#: .\templates\news\home.html:306
+msgid "Linklar"
+msgstr "Linklar"
+
+#: .\templates\news\search_results.html:7
+msgid "Qidiruv natijalari"
+msgstr "Qidiruv natijalari"

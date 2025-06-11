@@ -3,7 +3,7 @@ from django.db import models
 from django.utils import timezone
 from django.urls import reverse
 from django.utils.text import slugify
-from ckeditor.fields import RichTextField
+
 
 
 
@@ -38,8 +38,7 @@ class News(models.Model):
 
     title = models.CharField(max_length=250)
     slug = models.CharField(max_length=250, blank=True, null=True)
-    # body = models.TextField()
-    body = RichTextField()
+    body = models.TextField()
     image = models.ImageField(upload_to='news/images', blank=True, null=True)
 
     #category bilan newsni bog'laymiz
