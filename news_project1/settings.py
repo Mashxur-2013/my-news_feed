@@ -181,7 +181,7 @@ LOGIN_REDIRECT_URL = "home_page"
 LOGOUT_REDIRECT_URL = "login"
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-
-LOGIN_URL = 'login'
+# cjhjdbvsj
+LOGIN_URL =  'login'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
