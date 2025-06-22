@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-import os
+
 from decouple import config
 from pathlib import Path
 
@@ -33,7 +33,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 # DEBUG = True
 
-ALLOWED_HOSTS = ['itnews.uz', 'www.itnews.uz', '127.0.0.1']
+ALLOWED_HOSTS = ['django.zarifdev.uz', 'www.django.zarifdev.uz', '127.0.0.1']
 
 
 # Application definition
@@ -149,14 +149,11 @@ LOCALE_PATHS = (BASE_DIR / 'locale', )
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = '/home/zarifdev/django.zarifdev.uz/django/staticfiles'
+STATICFILES_DIRS = ('/home/zarifdev/django.zarifdev.uz/django//static', )
+MEDIA_URL = 'media/'
+MEDIA_ROOT = '/home/zarifdev/django.zarifdev.uz/django/media'
 
-# Media files
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-#
 # STATIC_URL = 'static/'
 # STATICFILES_DIRS = [ BASE_DIR / 'static']
 # STATIC_ROOT = BASE_DIR / 'staticfiles'
@@ -167,6 +164,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 #
 # MEDIA_URL = 'media/'
 # MEDIA_ROOT = BASE_DIR / 'media'
+
 
 
 
