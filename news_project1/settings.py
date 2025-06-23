@@ -33,7 +33,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 # DEBUG = True
 
-ALLOWED_HOSTS = ['django.zarifdev.uz', 'www.django.zarifdev.uz', '127.0.0.1']
+ALLOWED_HOSTS = ['zarifdev.uz', 'www.zarifdev.uz', '127.0.0.1', 'localhost']
 
 
 # Application definition
