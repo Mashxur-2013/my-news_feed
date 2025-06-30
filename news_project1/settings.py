@@ -10,9 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
-from decouple import config
 from pathlib import Path
-
+import os
 
 from django.conf.global_settings import MEDIA_URL, MEDIA_ROOT, STATICFILES_DIRS, STATIC_ROOT, STATICFILES_FINDERS, \
     LOGIN_REDIRECT_URL, EMAIL_BACKEND, LOGOUT_REDIRECT_URL
@@ -25,15 +24,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
-# SECRET_KEY = 'django-insecure-_kz1%%(ldk+*)suqpohvfjp1x)_6$-4d-h_2u4&_=r7i@gpuuo'
+# SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = 'django-insecure-_kz1%%(ldk+*)suqpohvfjp1x)_6$-4d-h_2u4&_=r7i@gpuuo'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=False, cast=bool)
-# DEBUG = True
+#  DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = True
 
-ALLOWED_HOSTS = ['zarifdev.uz', 'www.zarifdev.uz', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', '*']
 
 
 # Application definition
@@ -149,10 +148,11 @@ LOCALE_PATHS = (BASE_DIR / 'locale', )
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/home/zarifdev/django.zarifdev.uz/django/staticfiles'
-STATICFILES_DIRS = ('/home/zarifdev/django.zarifdev.uz/django//static', )
-MEDIA_URL = 'media/'
-MEDIA_ROOT = '/home/zarifdev/django.zarifdev.uz/django/media'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
 
 # STATIC_URL = 'static/'
 # STATICFILES_DIRS = [ BASE_DIR / 'static']
@@ -162,8 +162,8 @@ MEDIA_ROOT = '/home/zarifdev/django.zarifdev.uz/django/media'
 #     'django.contrib.staticfiles.finders.AppDirectoriesFinder'
 # ]
 #
-# MEDIA_URL = 'media/'
-# MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 
 
